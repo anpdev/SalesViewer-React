@@ -1,0 +1,89 @@
+/**
+ * Variables
+ * =================================
+ * - Typography
+ * - Paths
+ * - App-specific
+ * - Color
+ */
+
+/* stylelint-disable indentation */
+
+/**
+ * Typography
+ * =================================
+ *
+ * Base sizes:
+ * Set this in pixels (but do not add px),
+ * the font-size mixin will convert to REMS
+ */
+ 
+ $font-size-base           : 16;
+ $font-size-base-px        : $font-size-base * 1px;
+ $font-size-base-narrow    : $font-size-base - 2;
+ $font-size-base-narrow-px : $font-size-base-narrow * 1px;
+ 
+ $leading-base             : 1.4;
+ $line-height-base         : round($font-size-base * $leading-base); // 18 * 1.4
+ $baseline                 : $line-height-base * 1px;
+ 
+ $type-scale               : 1.25; // Major third
+ 
+ 
+ // Useful to set here when bold webfonts come as 400 font-weight.
+ $font-weight-bold         : bold;
+ 
+ // Font stacks
+ $font-family-system       : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ $font-family-base         : 'Open Sans', sans-serif;
+
+
+ $font-weight-headings     : bold;    // instead of browser default, bold
+ $line-height-headings     : 1.1;
+ 
+ /**
+  * Path variables
+  * =================================
+  */
+ $img-path                 : "../../images"; // Usage: background: url('#{$img-path}/img.jpg') 0 0 no-repeat;
+ 
+ 
+ /**
+  * Z-index variables
+  * =================================
+  */
+ $z-low                       : 10;
+ $z-mid                       : 100;
+ $z-high                      : 1000;
+ 
+ 
+ /**
+  * App-specific variables
+  * =================================
+  */
+ $default-transition-timing   : cubic-bezier(0.77, 0, 0.175, 1);
+ $default-transition-duration : 300ms;
+ $default-transition          : all $default-transition-duration $default-transition-timing;
+ 
+ /**
+  * color palettes 
+  * =================================
+  */
+
+ $theme-color : #0B76C9;
+ $border-theme-color : #0B76C9;
+ $color-text  : #333333;
+ $secondary-color-text  :#545A6D; 
+ $border-color  : #dddddd;
+ $placeholder-color : #5c5c5c;
+ $color-white: #fff;
+ $border-header-color: #b2b2b2;
+
+$color-gradient:linear-gradient(to bottom, #333 0%, #5f5f5f 100%);
+  /**
+  * Value
+  * =================================
+  */
+
+  $zero: 0;
+  $field-height: 34px;

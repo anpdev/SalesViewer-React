@@ -1,0 +1,45 @@
+.c-bars {
+    height: 290px !important;
+    padding: 0 50px 0px !important;
+    margin: 0 auto;
+
+    .left-bar, .right-bar {
+        height: 215px !important;
+        float: left;
+        width: 46% !important;
+        .chart{ height: 210px; margin-left: -45px;}
+    }
+
+    .left-bar {
+        padding-right: 4%;
+    }
+
+    .right-bar {
+        padding-left: 4%;
+    }
+}
+
+.gray-line { 
+    
+    background: rgba(150, 150, 150, 0.1);
+    .chart{ height: 210px;}
+    &.empty {
+       
+        background: rgba(150, 150, 150, 0.1);
+    }
+}
+
+
+.caption {
+    padding-bottom: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+@media (min-width: 1200px) {
+    .c-bars {
+        min-width: 800px;
+        max-width: 1200px;
+    }
+}

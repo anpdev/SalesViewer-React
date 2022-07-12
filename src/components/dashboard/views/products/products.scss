@@ -1,0 +1,48 @@
+.data-grid {
+    min-width: 800px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    margin-bottom: 30px;
+}
+
+.gray-line {
+    background: rgba(150, 150, 150, 0.1);
+    height: 100% !important;
+    .product-info {
+        min-width: 800px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 15px 50px 10px 50px;
+        height: 320px;
+
+        .info {
+            width: 18%;
+            float: left;
+        }
+
+        .pie-charts {
+            width: 78%;
+            float: right;
+            .products-pie-container {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                
+            }
+            .sector{
+                max-width: 240px;
+                width: 30%;
+                position: relative;
+                height: 310px;
+            }
+            
+        }
+    }
+
+   
+}
+  
+        
+      
+    

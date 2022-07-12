@@ -1,0 +1,120 @@
+@import '../abstracts/abstract-dir';
+@import '../base/base-dir';
+@import '../utility/utility-dir';
+
+nav{
+    &.navbar{
+        background-color: $theme-color;
+        padding: $zero;
+        .navbar-brand{
+            width: 140px;
+            margin: $zero;
+        }
+        .tagline {
+            color:  $color-white;
+            border: 1px solid  $color-white;
+            border-radius: 4px;
+            padding: 3px;
+            text-transform: uppercase;
+            font-size: $font-size-base-narrow-px;
+        }
+        .globe-wrapper {
+            display: inherit;
+        }
+        .navbar-nav{
+            margin-left: auto;
+            .form-group{
+                .field-small{
+                    width: 96px;
+                    background: transparent;
+                    transition: all 0.5s ease;
+                    border: 1px solid  $color-white;
+                    padding: 5px;
+                    height: 26px;
+                    font-size: $font-size-base-narrow-px;
+                    color:  $color-white;
+                    &::placeholder{
+                        color:  $color-white;
+                        font-size: $font-size-base-narrow-px;
+                    }
+                    &:focus{
+                        width: 120px;
+                        background-color: $color-white;
+                        color: $color-text;
+                        &::placeholder{
+                            color: $color-text;
+                            font-size: $font-size-base-narrow-px;
+                        }
+                    }
+                }
+                .btn{
+                    font-size: $font-size-base-narrow-px;
+                    color:  $color-white;
+                    &:hover{
+                        color:  $color-white;
+                    }
+                }
+                
+            }
+            .nav-link{
+                color:  $color-white;
+                font-size: $font-size-base-px - 1;
+                padding: 12px 5px;
+                position: relative;
+                & + .nav-link{
+                 &::after{
+                    height: 85%;
+                    width: 0.1px;
+                    background:  $color-white;
+                    left: 0px;
+                    content: "";
+                    display: block;
+                    top: 50%;
+                    position: absolute;
+                    transform: translateY(-50%);
+                    opacity: 0.6;
+                 }  
+                }
+            }
+        }
+        .tagLine{
+            color:  $color-white;
+            border: 1px solid  $color-white;
+            padding: 3px;
+            border-radius: 4px;
+            font-size: $font-size-base-narrow-px;
+        }
+        &.secondaryNavbar{
+            background-color: $color-white;
+            border-bottom: 1px solid $border-header-color;
+            .navbar-nav{
+                margin: inherit;
+                width: 100%;
+                .nav-link{
+                    color: $secondary-color-text;
+                    padding: 14px 6px;
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                    white-space: nowrap;
+                    text-align: center;
+                    white-space: nowrap;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: $font-size-base-narrow-px - 1;
+                    & + .nav-link{
+                        border-left: 1px solid $border-header-color;
+                    }
+                    &:hover, &:focus, &.active{
+                        background: $color-gradient;
+                        color: $color-white!important;
+                    }
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,123 @@
+$hoverColor: #fff;
+$textColor: #333;
+$menuHeight: 60px;
+$padding: 50px;
+
+menu {
+    float: left;
+}
+
+
+
+.top-menu,
+.themes-menu {
+    .context-menu-container-border {
+        border: none;
+    }
+
+    .context-menu-content-delimiter {
+        background-color: transparent;
+    }
+
+    .menu-item { 
+        text-transform: uppercase;
+        .dx-menu-item-content {
+            padding: 0;
+        }
+    }
+}
+
+
+.top-menu {
+    height: 60px;
+    .menu-horizontal {
+        height: 100%;
+       .menu-item-wrapper{
+            display: inline-block;
+            .theme-text-color{
+               color:$textColor !important;
+            }
+            .theme-text-color.active{
+                background-color:inherit !important;    
+                border-bottom :  2px solid #0B76C9;
+                color : #0B76C9 !important;
+             }
+       
+        }
+    }
+
+    .menu-item {
+        height: $menuHeight;
+        line-height: $menuHeight;
+        font-size: 16px;
+        padding: 0 20px;
+        display: block;
+        text-decoration: none;
+    }
+
+    &.menu {
+        .menu-item-wrapper {
+            .menu-item {
+                &.menu-item-expanded,
+                &.dx-state-hover,
+                &.dx-state-focused {
+                    background-color: $hoverColor;
+                     color: $textColor;
+                }
+
+                .menu-item {
+                    color: $textColor;
+                }
+            }
+
+            &:first-child {
+               
+                text-align: right;
+                position: relative;
+        
+               
+                .menu-item {
+                    padding-right: 46px;
+                }
+            }
+        }
+    }
+ 
+}
+ 
+
+
+
+.header-container {
+   
+    .content {
+        min-width: 900px - 2*$padding;
+        max-width: 1200px;
+        padding: 0 $padding;
+        margin: 0 auto;
+        height: $menuHeight;
+        color: $textColor;
+   }
+}
+
+.navbar.navbar-light {
+     background-color: #fff;
+  } 
+ 
+.menu-item:hover { border-bottom: 2px solid #0B76C9; color: #0B76C9; }
+
+ .state-hover{
+            background-color:#fff !important; 
+    }
+.header-container { border-bottom: 1px solid #ccc; }
+
+ @media (max-width: 767px) { 
+  .header-container .content { display: none;  
+ }
+  .navbar { display: block; margin-bottom:0px; }
+  .navbar.navbar-default .navbar-toggle { background: #3c76ca !important; float: left; margin-left: 10px; }
+}
+ @media (min-width: 768px) { 
+    //  .navbar {display: none;}
+     .header-container .content { display: block;}
+ }

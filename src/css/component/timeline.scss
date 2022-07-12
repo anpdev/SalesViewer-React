@@ -1,0 +1,45 @@
+.routingPage{
+    position: relative;
+    .header-left{
+        top: 0;
+        top: 80px;
+        display: inline-block;
+        position: absolute;
+        z-index: 9;
+        padding: 0 15px;
+        button{
+            background: #fff;
+            border-color: #ddd;
+            color: #333;
+            font-size: 14px;
+            &.dropdown-toggle{
+                background-color: #fff;
+                border-color:#ddd;
+                color: #333;
+            }
+        }
+    }
+}
+.dx-scheduler-header-panel{
+    margin: 0;      
+    th.dx-scheduler-header-panel-cell.dx-scheduler-cell-sizes-horizontal.dx-scheduler-header-panel-week-cell{
+        display: none;
+    }
+}
+.dx-scheduler-header{
+    .dx-visibility-change-handler{
+        .dx-toolbar-before{
+            right: 378px;
+            left: auto;
+        } 
+    }
+}
+.dx-scheduler-appointment-horizontal {
+    margin-top: -20px;
+    min-height: 50px;
+}
+
+
+.dx-scheduler-group-flex-container .dx-scheduler-group-row .dx-scheduler-group-header {
+    width: auto !important;
+}

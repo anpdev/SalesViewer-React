@@ -1,0 +1,56 @@
+.switcher {
+    padding-top: 13px !important;
+    float: right;
+    padding-right: 1px;
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+    opacity: 0.6;
+    font-size: 14px;
+    padding-top: 2px;
+    line-height: 20px;
+    z-index: 1;
+
+    .date {
+        display: inline-block;
+        width: 70px;
+        text-align: center;
+
+        &.day {
+            width: 90px;
+        }
+    }
+
+    .icon {
+        cursor: pointer;
+        font-size: 20px;
+        opacity: 0.6;
+        position: absolute;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .fa-angle-left {
+        left: -20px;
+        cursor: pointer;
+        opacity: .6;
+        position: absolute;
+    }
+
+    .fa-angle-right {
+        right: -20px;
+        cursor: pointer;
+        opacity: .6;
+        position: absolute;
+        top: 13px;
+    }
+
+    .disabled {
+        opacity: 0.25;
+        cursor: default;
+    }
+}
